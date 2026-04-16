@@ -7,6 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="adursearch">
+
     
     <title>Buscador Audrey</title>
 
@@ -47,28 +48,38 @@
 
     <div id="pantalla-inicio" class="pantalla activa">
         <header>
-            <svg width="250" height="60" viewBox="0 0 200 60">
-                <defs>
-                    <linearGradient id="gradienteAzul" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:var(--colorTema);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:var(--colorTema);stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <g transform="translate(10, 10)">
-                    <circle cx="20" cy="20" r="15" stroke="url(#gradienteAzul)" stroke-width="4" fill="none"/>
-                    <path d="M32 32 L45 45" stroke="url(#gradienteAzul)" stroke-width="4" stroke-linecap="round"/>
-                </g>
-                <text x="70" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="var(--colorTema)">adursearch</text>
+            <svg width="550" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+            <linearGradient id="gradConvergencia" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#5ac8fa;stop-opacity:1" />
+            </linearGradient>
+            </defs>
+
+            <g transform="translate(10, 10)">
+            <path d="M10 60 L30 20 L50 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <path d="M18 42 L42 42" stroke="url(#gradConvergencia)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+            <circle cx="30" cy="48" r="3" fill="url(#gradConvergencia)"/>
+
+            <circle cx="30" cy="20" r="12" stroke="url(#gradConvergencia)" stroke-width="2.5" fill="none"/>
+            </g>
+
+            <text x="75" y="68" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="60" font-weight="900" letter-spacing="-1.5px" fill="white">
+            adur<tspan font-weight="200" opacity="0.7">search</tspan>
+            </text>
             </svg>
 
             <h2>El buscador más seguro y privado</h2>
-            <h3 class="subtitulo-tema" style="font-weight: 400; font-size: 220%; margin-top: -30px; margin-bottom: 70px; color: var(--colorTema);">Imágenes</h3>
+            <h3 class="subtitulo-tema" style="font-weight: 400; font-size: 220%; margin-top: 30px; margin-bottom: 40px; color: var(--colorTema);">Imágenes</h3>
             
             <div class="barraBuscar">
                 <button class="btn-lupa" onclick="alternarBusqueda('pantalla-inicio')">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </button>
-                <input type="search" id="input-inicio" placeholder="¿Qué quieres buscar hoy?" onkeypress="siPulsaEnter(event)" autocomplete="off">
+                <input type="search" id="input-inicio" placeholder="¿Qué quieres buscar hoy?" onkeypress="siPulsaEnter(event)"
+                    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
             </div>
         </header>
         <footer>
@@ -86,7 +97,8 @@
                 <button class="btn-lupa" onclick="alternarBusqueda('pantalla-resultados')">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 </button>
-                <input type="search" id="input-resultados" placeholder="Buscar..." onkeypress="siPulsaEnter(event)" autocomplete="off">
+                <input type="search" id="input-resultados" placeholder="Buscar..." onkeypress="siPulsaEnter(event)" autocomplete="off"
+                    autocorrect="off" autocapitalize="off" spellcheck="false">
             </div>
             <div class="secciones">
                 <h4>Todos</h4>

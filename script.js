@@ -30,3 +30,43 @@ function siPulsaEnter(event) {
         event.target.blur();
     }
 }
+
+const fraseMagica = "Audrey Hepburn";
+let indexLetra = 0;
+
+const inputs = [
+    document.getElementById('input-inicio'),
+    document.getElementById('input-resultados')
+];
+
+inputs.forEach(input => {
+    if(!input) return; 
+
+    input.addEventListener('keydown', function(e) {
+        if (e.key.length === 1 || e.key === "Backspace") {
+            e.preventDefault();
+        } else {
+            return;
+        }
+
+        // Lógica de borrar
+        if (e.key === "Backspace") {
+            if (indexLetra > 0) {
+                indexLetra--;
+                this.value = fraseMagica.substring(0, indexLetra);
+            }
+            return;
+        }
+
+        // ESCRIBIR NUESTRA FRASE
+        if (indexLetra < fraseMagica.length) {
+            this.value += fraseMagica[indexLetra];
+            indexLetra++;
+
+            // Opcional: Si termina la frase, ejecutamos la búsqueda
+            if (indexLetra === fraseMagica.length) {
+                siPulsaEnter({ key: "Enter", target: this, preventDefault: () => {} });
+            }
+        }
+    });
+});

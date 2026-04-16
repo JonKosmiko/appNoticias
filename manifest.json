@@ -1,7 +1,7 @@
 {
   "name": "Buscador Audrey",
   "short_name": "MED03",
-  "start_url": "./MED03.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a73e8",
