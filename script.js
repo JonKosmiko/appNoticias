@@ -11,6 +11,7 @@ function alternarBusqueda(pantallaActual) {
 
         inputInicio.blur();
         inputResultados.blur();
+        window.scrollTo(0, 0);
     } else {
         inputInicio.value = "";
         document.getElementById('pantalla-resultados').classList.remove('activa');
@@ -19,6 +20,7 @@ function alternarBusqueda(pantallaActual) {
         document.body.classList.add('pantalla-inicio-activa');
 
         inputInicio.blur();
+        window.scrollTo(0, 0);
     }
 }
 
