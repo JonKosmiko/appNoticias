@@ -8,42 +8,13 @@ html {
 }
 
 :root {
-    /* MI PROPUESTA CON COLORES TEMA */
-    /* --colorFondo: #002630;
-    --colorTema: #fefae0;
-    --colorTema_secundario: #606c38;
-    --colorLineas: #003e42;
-    --colorSombraFotos: #c3a87F;
-    --interfaz_color: #dfe1e5;
-    --fuente: arial, sans-serif;
-     */
-    
-    /* GRIS MARRONCITO */
-     /* --colorFondo: #282d2e;
-    --colorTema: #fefae0;
-    --colorTema_secundario: #666d50;
-    --colorLineas: #003e42;
-    --colorSombraFotos: #1a1918;
-    --interfaz_color: #dfe1e5;
-    --fuente: arial, sans-serif; */
-    
-    /* GRIS MARRONCITO */
-     --colorFondo: #252727;
-    --colorTema: #1d6968;
-    --colorTema_secundario: #666d50;
+    --colorFondo: #252727;
+    --colorTema_secundario: #1c92fd;
+    --colorTema: #9fc5e9;
     --colorLineas: #003e42;
     --colorSombraFotos: #1a1918;
     --interfaz_color: #6d6965;
     --fuente: arial, sans-serif;
-
-    /* NEÓN */
-    /* --colorFondo: #0d0221;
-    --colorTema: #3de6af;
-    --colorTema_secundario: #ff4a9e;
-    --colorLineas: #3de6af;
-    --colorSombraFotos: #ff4a9e;
-    --interfaz_color: #261447;
-    --fuente: arial, sans-serif; */
 }
 
 body {
@@ -220,6 +191,26 @@ header h2 {
     background: none;
     color: var(--colorTema_secundario);
     cursor: pointer;
+}
+
+.iconosBusqueda{
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+
+    svg{
+        width: 40px;
+        height: 40px;
+    }
+
+    .seleccionado{
+        width: 50px;
+        height: 50px;
+
+        transform: translateY(-15px);
+
+        color: var(--colorTema_secundario);
+    }
 }
 
 .secciones {
