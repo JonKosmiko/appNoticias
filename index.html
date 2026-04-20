@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="adursearch">
 
     
-    <title>Buscador Audrey</title>
+    <title>Buscador Noticias</title>
 
     <link rel="apple-touch-icon" href="icono-192.png">
     <link rel="manifest" href="manifest.json">
@@ -35,8 +35,27 @@
 
     <nav class="nav-superior">
         <div class="logo-mini" onclick="alternarBusqueda('pantalla-resultados')">
-            <svg width="120" height="30" viewBox="0 0 200 60">
-                <text x="0" y="45" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="var(--colorTema )">adursearch</text>
+            <svg width="350" height="50" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                <linearGradient id="gradConvergencia2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#5ac8fa;stop-opacity:1" />
+                </linearGradient>
+                </defs>
+
+                <g transform="translate(10, 10)">
+                <path d="M10 60 L30 20 L50 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                <path d="M18 42 L42 42" stroke="url(#gradConvergencia2)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+                <circle cx="30" cy="48" r="3" fill="url(#gradConvergencia2)"/>
+
+                <circle cx="30" cy="20" r="12" stroke="url(#gradConvergencia2)" stroke-width="2.5" fill="none"/>
+                </g>
+                
+                <text x="75" y="68" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="60" font-weight="900" letter-spacing="-1.5px" fill="white">
+                adur<tspan font-weight="200" opacity="0.7">search</tspan>
+                </text>
             </svg>
         </div>
         <div class="iconos-derecha">
@@ -49,26 +68,26 @@
     <div id="pantalla-inicio" class="pantalla activa">
         <header>
             <svg width="550" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-            <linearGradient id="gradConvergencia" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#5ac8fa;stop-opacity:1" />
-            </linearGradient>
-            </defs>
+                <defs>
+                <linearGradient id="gradConvergencia" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#5ac8fa;stop-opacity:1" />
+                </linearGradient>
+                </defs>
 
-            <g transform="translate(10, 10)">
-            <path d="M10 60 L30 20 L50 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <g transform="translate(10, 10)">
+                <path d="M10 60 L30 20 L50 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-            <path d="M18 42 L42 42" stroke="url(#gradConvergencia)" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <path d="M18 42 L42 42" stroke="url(#gradConvergencia)" stroke-width="3" stroke-linecap="round" fill="none"/>
 
-            <circle cx="30" cy="48" r="3" fill="url(#gradConvergencia)"/>
+                <circle cx="30" cy="48" r="3" fill="url(#gradConvergencia)"/>
 
-            <circle cx="30" cy="20" r="12" stroke="url(#gradConvergencia)" stroke-width="2.5" fill="none"/>
-            </g>
+                <circle cx="30" cy="20" r="12" stroke="url(#gradConvergencia)" stroke-width="2.5" fill="none"/>
+                </g>
 
-            <text x="75" y="68" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="60" font-weight="900" letter-spacing="-1.5px" fill="white">
-            adur<tspan font-weight="200" opacity="0.7">search</tspan>
-            </text>
+                <text x="75" y="68" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="60" font-weight="900" letter-spacing="-1.5px" fill="white">
+                adur<tspan font-weight="200" opacity="0.7">search</tspan>
+                </text>
             </svg>
 
             <h2>El buscador más seguro y privado</h2>
@@ -82,7 +101,7 @@
                 <line x1="8" y1="13" x2="12" y2="13" stroke-width="1.5" opacity="0.7"></line>
                 </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="seleccionado">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <circle cx="8.5" cy="8.5" r="1.5"></circle>
                     <polyline points="21 15 16 10 5 21"></polyline>
@@ -93,7 +112,7 @@
                 <polygon points="10 8 16 12 10 16 10 8"></polygon>
                 </svg>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  class="seleccionado">
                 <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
                 <line x1="6" y1="8" x2="18" y2="8" stroke-width="2.5"></line>
                 <line x1="6" y1="12" x2="18" y2="12"></line>
@@ -143,39 +162,70 @@
             </div>
             <div class="secciones">
                 <h4>Todos</h4>
-                <h4><span>Imágenes</span></h4>
+                <h4>Imágenes</h4>
                 <h4>Vídeos</h4>
-                <h4>Noticias</h4>
+                <span><h4>Noticias</h4></span>
                 <h4>Mapas</h4>
                 <h4>Libros</h4>
             </div>
         </header>
 
         <main>
-            <div class="contenedorFotos">
-                <img class="foto" src="img/01.jpg" alt="Audrey Hepburn">
-                <p>Audrey Hepburn - L...</p>
-                <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/250px-AudreyKHepburn.jpg" alt="favicon">
-                    <h2>Wikipedia.com</h2>
-                </div>
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://www.dida.eus/user=koldog/messageid=sasl11dl33</h3></div>
+                <h2>Publicación de Koldo Garmendia en DiDa! @koldog - DiDa!.eus</h2>
+                <p>Koldo Garmendia (@koldog) - Dida <br>"Por favor, ¡máxima difusión! ¡Mi Sara ha desaparecido! ¡¡ESTAMOS MUY PREOCUPADOS POR LO QUE LE HAYA PODIDO PASAR!!". #Donostia #SaraAgirre #Dida
+                <br>
+                <small>Hace 3 meses</small>
+                </p>
             </div>
-            <div class="contenedorFotos">
-                <img class="foto" src="img/02.jpg" alt="Audrey Hepburn set">
-                <p>Audrey Hepburn sonriendo en el set de ...</p>
-                <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/250px-AudreyKHepburn.jpg" alt="favicon">
-                    <h2>Curiosidades.com</h2>
+            
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://www.dida.eus/user=koldog/messageid=w0238sasKKm1</h3></div>
+                <h2>Publicación de Koldo Garmendia en DiDa! @koldog - DiDa!.eus</h2>
+                <p>Koldo Garmendia (@koldog) - Dida <br>
+Donde tendría que haber un "sí, quiero", solo hay silencio. Sara, si lees esto, por favor... #Donostia #SaraAgirre #Dida
+                    <br>
+                    <small>Hace 3 meses</small>
+                </p>
                 </div>
-                <div class="contenedorFotos">
-                    <img class="foto" src="img/03.jpg" alt="Audrey Hepburn set">
-                    <p>Audrey Hepburn sonriendo en el set de ...</p>
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AudreyKHepburn.jpg/250px-AudreyKHepburn.jpg" alt="favicon">
-                        <h2>Curiosidades.com</h2>
-                    </div>
+                
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://Salud-vibras-dieta.net</h3></div>
+                <h2>La cuenta @GossipVascoNavarro analiza el último post de Koldo Garmendia. "La ropa de la novia seguía en la habitación", comentan varios testigos en el hilo oficial de...</h2>
+                <p>Hace ya un mes de que el usuario de "DiDa!" Koldo Garmendia (@koldog) publicara desesperado la desaparición de su prometida Sara Agirre justo el día de su boda. Fuentes cercanas informan...
+                    <br>
+                    <small>Hace 2 meses</small>
+                </p>
                 </div>
-            </div>
+                
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://www.dida.eus/user=koldog/messageid=sasm92932mcLAKA#</h3></div>
+                <h2>Publicación de Koldo Garmendia en DiDa! @koldog - DiDa!.eus</h2>
+                <p>Koldo Garmendia (@koldog) - Dida <br>
+Literalmente no me lo creo. Estamos todos en la iglesia y Sara no aparece. No coge el teléfono ni nada. Al principio pensaba que era una broma de mal gusto, pero ya no tiene gracia. Si alguien la ha visto por la zona de Gros esta mañana, por favor, escribidme por DM. Estoy fatal. #Donostia #SaraAgirre #Dida
+                    <br>
+                    <small>Hace 3 meses</small>
+                </p>
+                </div>
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://www.dida.eus/user=koldog/messageid=83%63m</h3></div>
+                <h2>Publicación de Koldo Garmendia en DiDa! @koldog - DiDa!.eus</h2>
+                <p>Koldo Garmendia (@koldog) - Dida <br>
+En respuesta a @iñarritu-Tu:
+(2/3) Es como si se la hubiera tragado la tierra. Por favor, dejad de decir en los comentarios que se ha arrepentido. No la conocéis. Algo ha pasado. Mi Sara... ¿¡Dónde estás!?#Donostia #SaraAgirre #Dida
+                    <br>
+                    <small>Hace 3 meses</small>
+                </p>
+                </div>
+            <div class="noticia">
+                <div class="webNoticia"><h3>https://www.dida.eus/user=koldog/messageid=saks8%12</h3></div>
+                <h2>Publicación de Koldo Garmendia en DiDa! @koldog - DiDa!.eus</h2>
+                <p>Me estáis saturando el buzón con teorías de mierda y no puedo más. Bloqueo directo a quien vuelva a insinuar que esto es un montaje para ganar seguidores. Mi prometida no está, me da igual el engagement y me da igual todo. Solo quiero que Sara vuelva. Por favor, difundid la foto, ¡que llegue a todo el mundo!. #Donostia #SaraAgirre #Dida
+                    <br>
+                    <small>Hace 3 meses</small>
+                </p>
+                </div>
         </main>
 
         <footer>

@@ -1,12 +1,9 @@
-const CACHE_NAME = 'MED03-v4';
+const CACHE_NAME = 'buscadorNoticias_v1';
 const ASSETS = [
   './',
   './index.html',
   './css/estilos.css',
   './script.js',
-  './img/01.jpg',
-  './img/02.jpg',
-  './img/03.jpg'
 ];
 
 self.addEventListener('install', (event) => {

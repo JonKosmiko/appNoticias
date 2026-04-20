@@ -8,7 +8,7 @@ html {
 }
 
 :root {
-    --colorFondo: #252727;
+    --colorFondo: #0a1049;
     --colorTema_secundario: #1c92fd;
     --colorTema: #9fc5e9;
     --colorLineas: #003e42;
@@ -69,6 +69,7 @@ body {
 
 .nav-superior {
     width: 100%;
+    height: 74px;
     padding: calc(20px + env(safe-area-inset-top)) 20px 20px 20px;
     position: fixed;
     top: 0;
@@ -245,14 +246,14 @@ header h2 {
 
 main {
     padding-top: 30px;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contenedorFotos {
+.contenedorNoticia  {
     width: 80%;
     min-width: 100px;
     margin-bottom: 45px;
@@ -263,32 +264,41 @@ main {
     border-radius: 5px;
 }
 
-.contenedorFotos .foto {
-    width: 70%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--colorSombraFotos);
+.noticia {
+    margin-bottom: 35px;
+    width: 100%;
+    text-align: left;
 }
 
-.contenedorFotos div {
-    margin-top: 15px;
-    display: flex;
-    gap: 5px;
-}
-
-.contenedorFotos div img {
-    width: 15px;
-}
-
-.contenedorFotos div h2 {
+.webNoticia h3 {
     margin: 0;
-    font-size: 90%;
-    font-weight: 500;
+    font-size: 14px;
+    color: #d6d3d3;
+    font-weight: 200;
 }
 
-.contenedorFotos p {
-    margin: 0;
-    margin-top: 15px;
-    font-size: 85%;
+.noticia h2 {
+    margin: 4px 0;
+    color: var(--colorTema);
+    font-size: 1.25rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.noticia h2:hover {
+    text-decoration: underline;
+}
+
+.noticia p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.58;
+}
+
+.noticia small {
+    color: #70757a;
+    font-size: 12px;
 }
 
 footer {

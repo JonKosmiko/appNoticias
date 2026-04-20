@@ -1,6 +1,6 @@
 {
-  "name": "Buscador Audrey",
-  "short_name": "MED03",
+  "name": "Buscador Noticias",
+  "short_name": "Noticias",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",

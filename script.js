@@ -1,5 +1,7 @@
 const inputInicio = document.getElementById('input-inicio');
 const inputResultados = document.getElementById('input-resultados');
+const fraseMagica = "Sara Agirre y Koldo Garmendia";
+let indexLetra = 0;
 
 function alternarBusqueda(pantallaActual) {
     if (pantallaActual === 'pantalla-inicio') {
@@ -13,7 +15,10 @@ function alternarBusqueda(pantallaActual) {
         inputResultados.blur();
         window.scrollTo(0, 0);
     } else {
-        inputInicio.value = "";
+        inputInicio.value = ""; 
+        inputResultados.value = ""; 
+        indexLetra = 0;             
+
         document.getElementById('pantalla-resultados').classList.remove('activa');
         document.getElementById('pantalla-inicio').classList.add('activa');
         document.body.classList.remove('pantalla-resultados-activa');
@@ -29,22 +34,17 @@ function siPulsaEnter(event) {
         if (document.getElementById('pantalla-inicio').classList.contains('activa')) {
             alternarBusqueda('pantalla-inicio');
         }
-        event.target.blur();
+        if (event.target) event.target.blur();
     }
 }
 
-const fraseMagica = "Audrey Hepburn";
-let indexLetra = 0;
-
-const inputs = [
-    document.getElementById('input-inicio'),
-    document.getElementById('input-resultados')
-];
+const inputs = [inputInicio, inputResultados];
 
 inputs.forEach(input => {
     if(!input) return; 
 
     input.addEventListener('keydown', function(e) {
+        // Bloqueamos teclas normales para que no se escriban caracteres reales
         if (e.key.length === 1 || e.key === "Backspace") {
             e.preventDefault();
         } else {
@@ -60,15 +60,10 @@ inputs.forEach(input => {
             return;
         }
 
-        // ESCRIBIR NUESTRA FRASE
+        // Escribir la frase mágica letra a letra
         if (indexLetra < fraseMagica.length) {
             this.value += fraseMagica[indexLetra];
             indexLetra++;
-
-            // Opcional: Si termina la frase, ejecutamos la búsqueda
-            if (indexLetra === fraseMagica.length) {
-                siPulsaEnter({ key: "Enter", target: this, preventDefault: () => {} });
-            }
         }
     });
 });
