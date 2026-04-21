@@ -1,4 +1,4 @@
-const CACHE_NAME = 'buscadorNoticias_v1.1';
+const CACHE_NAME = 'buscadorNoticias_v3';
 const ASSETS = [
   './',
   './index.html',
@@ -33,7 +33,14 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith(
-      caches.match('./index.html')
+      fetch(event.request)
+        .then(response => {
+          if (response.ok) return response;
+          return caches.match('./index.html');
+        })
+        .catch(() => {
+          return caches.match('./index.html');
+        })
     );
     return;
   }
